@@ -37,7 +37,7 @@
             if(xmlhttp.readyState==4);//4 (完成) 数据接收完毕,此时可以通过通过responseBody和responseText获取完整的回应数据
             {
             alert(xmlhttp.status);
-                if(xmlhttp.status==0)//交易成功
+                if(xmlhttp.status==200)//交易成功
                 {
                     document.getElementById('A1').innerHTML=xmlhttp.status;
                 }
